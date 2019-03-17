@@ -1,9 +1,15 @@
 // importing a named export (not a default), so the name must match and be in curly braces
-import { add } from './App';
+import { add, total } from './App';
 
 // unit test syntax
 // only tests one thing in the code (the add function)
-test('add function test', () => {
+test('add function', () => {
   const value = add(1, 2);
   expect(value).toBe(3);
+});
+
+// integration test syntax
+// because total relies on the add function to work correctly
+test('total function', () => {
+  expect(total(5, 20)).toBe('$25');
 });
