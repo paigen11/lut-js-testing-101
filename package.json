@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel serve index.html --port 1111",
     "test": "jest --watchAll"
   },
   "keywords": [],
@@ -17,6 +17,6 @@
   },
   "jest": {
     "verbose": true,
-    "testURL": "http://localhost:1234/"
+    "testURL": "http://localhost:1111/"
   }
 }
