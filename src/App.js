@@ -1,6 +1,4 @@
-export const add = (x, y) => {
-  return x + y;
-};
+import { add } from './add';
 
 // more concise, implicit return style function
 // export const add = (x, y) =>  x + y;
